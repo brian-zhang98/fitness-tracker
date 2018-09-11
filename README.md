@@ -1,6 +1,6 @@
-# FITNESS TRACKING APP
+## Fitness Tracking IOS App
 
-## Functionalities
+### FUNCTIONALITIES
 
 Daily goals - steps, bodyweight exercies
 
