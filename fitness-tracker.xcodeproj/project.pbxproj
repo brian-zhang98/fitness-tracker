@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CAF0C20CB011000A9EE3D /* MyCell.swift */; };
+		2ABF7A0A21483BF2000BF0A7 /* fitness-tracker-UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */; };
 		2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048220B685A3000F20FD /* AppDelegate.swift */; };
-		2AC2048520B685A3000F20FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048420B685A3000F20FD /* FirstViewController.swift */; };
+		2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */; };
 		2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048620B685A3000F20FD /* SecondViewController.swift */; };
 		2AC2048A20B685A3000F20FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2048820B685A3000F20FD /* Main.storyboard */; };
 		2AC2048C20B685A5000F20FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2048B20B685A5000F20FD /* Assets.xcassets */; };
 		2AC2048F20B685A5000F20FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC2048D20B685A5000F20FD /* LaunchScreen.storyboard */; };
-		2AC2049A20B685A5000F20FD /* Fitness_TrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2049920B685A5000F20FD /* Fitness_TrackerTests.swift */; };
-		2AC204A520B685A5000F20FD /* Fitness_TrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC204A420B685A5000F20FD /* Fitness_TrackerUITests.swift */; };
+		2AC2049A20B685A5000F20FD /* fitness-tracker-tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2049920B685A5000F20FD /* fitness-tracker-tests.swift */; };
+		2AC204B520B68638000F20FD /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AC204B420B68638000F20FD /* HealthKit.framework */; };
+		2AE1C11520B8A88800E0095D /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1C11420B8A88800E0095D /* ThirdViewController.swift */; };
+		2AE1C11720B8A89D00E0095D /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1C11620B8A89D00E0095D /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +39,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2AC2047F20B685A3000F20FD /* Fitness Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fitness Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9CAF0C20CB011000A9EE3D /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		2AC2047F20B685A3000F20FD /* fitness-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC2048220B685A3000F20FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AC2048420B685A3000F20FD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalsViewController.swift; sourceTree = "<group>"; };
 		2AC2048620B685A3000F20FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2AC2048920B685A3000F20FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2AC2048B20B685A5000F20FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC2048E20B685A5000F20FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC2049020B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AC2049520B685A5000F20FD /* Fitness TrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitness TrackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC2049920B685A5000F20FD /* Fitness_TrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_TrackerTests.swift; sourceTree = "<group>"; };
+		2AC2049520B685A5000F20FD /* fitness-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitness-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC2049920B685A5000F20FD /* fitness-tracker-tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fitness-tracker-tests.swift"; sourceTree = "<group>"; };
 		2AC2049B20B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2AC204A020B685A5000F20FD /* Fitness TrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fitness TrackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC204A420B685A5000F20FD /* Fitness_TrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fitness_TrackerUITests.swift; sourceTree = "<group>"; };
+		2AC204A020B685A5000F20FD /* fitness-trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitness-trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fitness-tracker-UITests.swift"; sourceTree = "<group>"; };
 		2AC204A620B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC204B220B68635000F20FD /* fitness-tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fitness-tracker.entitlements"; sourceTree = "<group>"; };
+		2AC204B420B68638000F20FD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2AE1C11420B8A88800E0095D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		2AE1C11620B8A89D00E0095D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AC204B520B68638000F20FD /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,61 +89,74 @@
 		2AC2047620B685A3000F20FD = {
 			isa = PBXGroup;
 			children = (
-				2AC2048120B685A3000F20FD /* Fitness Tracker */,
-				2AC2049820B685A5000F20FD /* Fitness TrackerTests */,
-				2AC204A320B685A5000F20FD /* Fitness TrackerUITests */,
+				2AC2048120B685A3000F20FD /* fitness-tracker */,
+				2AC2049820B685A5000F20FD /* fitness-tracker-tests */,
 				2AC2048020B685A3000F20FD /* Products */,
+				2AC204B320B68638000F20FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2AC2048020B685A3000F20FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AC2047F20B685A3000F20FD /* Fitness Tracker.app */,
-				2AC2049520B685A5000F20FD /* Fitness TrackerTests.xctest */,
-				2AC204A020B685A5000F20FD /* Fitness TrackerUITests.xctest */,
+				2AC2047F20B685A3000F20FD /* fitness-tracker.app */,
+				2AC2049520B685A5000F20FD /* fitness-trackerTests.xctest */,
+				2AC204A020B685A5000F20FD /* fitness-trackerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2AC2048120B685A3000F20FD /* Fitness Tracker */ = {
+		2AC2048120B685A3000F20FD /* fitness-tracker */ = {
 			isa = PBXGroup;
 			children = (
+				2AC204B220B68635000F20FD /* fitness-tracker.entitlements */,
 				2AC2048220B685A3000F20FD /* AppDelegate.swift */,
-				2AC2048420B685A3000F20FD /* FirstViewController.swift */,
+				2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */,
+				2A9CAF0C20CB011000A9EE3D /* MyCell.swift */,
 				2AC2048620B685A3000F20FD /* SecondViewController.swift */,
+				2AE1C11420B8A88800E0095D /* ThirdViewController.swift */,
+				2AE1C11620B8A89D00E0095D /* FourthViewController.swift */,
 				2AC2048820B685A3000F20FD /* Main.storyboard */,
 				2AC2048B20B685A5000F20FD /* Assets.xcassets */,
 				2AC2048D20B685A5000F20FD /* LaunchScreen.storyboard */,
 				2AC2049020B685A5000F20FD /* Info.plist */,
 			);
-			path = "Fitness Tracker";
+			path = "fitness-tracker";
 			sourceTree = "<group>";
 		};
-		2AC2049820B685A5000F20FD /* Fitness TrackerTests */ = {
+		2AC2049820B685A5000F20FD /* fitness-tracker-tests */ = {
 			isa = PBXGroup;
 			children = (
-				2AC2049920B685A5000F20FD /* Fitness_TrackerTests.swift */,
+				2AC2049920B685A5000F20FD /* fitness-tracker-tests.swift */,
 				2AC2049B20B685A5000F20FD /* Info.plist */,
+				2AC204A320B685A5000F20FD /* fitness-tracker-UITests */,
 			);
-			path = "Fitness TrackerTests";
+			path = "fitness-tracker-tests";
 			sourceTree = "<group>";
 		};
-		2AC204A320B685A5000F20FD /* Fitness TrackerUITests */ = {
+		2AC204A320B685A5000F20FD /* fitness-tracker-UITests */ = {
 			isa = PBXGroup;
 			children = (
-				2AC204A420B685A5000F20FD /* Fitness_TrackerUITests.swift */,
+				2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */,
 				2AC204A620B685A5000F20FD /* Info.plist */,
 			);
-			path = "Fitness TrackerUITests";
+			path = "fitness-tracker-UITests";
+			sourceTree = "<group>";
+		};
+		2AC204B320B68638000F20FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2AC204B420B68638000F20FD /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2AC2047E20B685A3000F20FD /* Fitness Tracker */ = {
+		2AC2047E20B685A3000F20FD /* fitness-tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC204A920B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness Tracker" */;
+			buildConfigurationList = 2AC204A920B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-tracker" */;
 			buildPhases = (
 				2AC2047B20B685A3000F20FD /* Sources */,
 				2AC2047C20B685A3000F20FD /* Frameworks */,
@@ -143,14 +166,14 @@
 			);
 			dependencies = (
 			);
-			name = "Fitness Tracker";
+			name = "fitness-tracker";
 			productName = "Fitness Tracker";
-			productReference = 2AC2047F20B685A3000F20FD /* Fitness Tracker.app */;
+			productReference = 2AC2047F20B685A3000F20FD /* fitness-tracker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2AC2049420B685A5000F20FD /* Fitness TrackerTests */ = {
+		2AC2049420B685A5000F20FD /* fitness-trackerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC204AC20B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness TrackerTests" */;
+			buildConfigurationList = 2AC204AC20B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-trackerTests" */;
 			buildPhases = (
 				2AC2049120B685A5000F20FD /* Sources */,
 				2AC2049220B685A5000F20FD /* Frameworks */,
@@ -161,14 +184,14 @@
 			dependencies = (
 				2AC2049720B685A5000F20FD /* PBXTargetDependency */,
 			);
-			name = "Fitness TrackerTests";
+			name = "fitness-trackerTests";
 			productName = "Fitness TrackerTests";
-			productReference = 2AC2049520B685A5000F20FD /* Fitness TrackerTests.xctest */;
+			productReference = 2AC2049520B685A5000F20FD /* fitness-trackerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2AC2049F20B685A5000F20FD /* Fitness TrackerUITests */ = {
+		2AC2049F20B685A5000F20FD /* fitness-trackerUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2AC204AF20B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness TrackerUITests" */;
+			buildConfigurationList = 2AC204AF20B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-trackerUITests" */;
 			buildPhases = (
 				2AC2049C20B685A5000F20FD /* Sources */,
 				2AC2049D20B685A5000F20FD /* Frameworks */,
@@ -179,9 +202,9 @@
 			dependencies = (
 				2AC204A220B685A5000F20FD /* PBXTargetDependency */,
 			);
-			name = "Fitness TrackerUITests";
+			name = "fitness-trackerUITests";
 			productName = "Fitness TrackerUITests";
-			productReference = 2AC204A020B685A5000F20FD /* Fitness TrackerUITests.xctest */;
+			productReference = 2AC204A020B685A5000F20FD /* fitness-trackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -196,6 +219,14 @@
 				TargetAttributes = {
 					2AC2047E20B685A3000F20FD = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					2AC2049420B685A5000F20FD = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -207,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2AC2047A20B685A3000F20FD /* Build configuration list for PBXProject "Fitness Tracker" */;
+			buildConfigurationList = 2AC2047A20B685A3000F20FD /* Build configuration list for PBXProject "fitness-tracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,9 +251,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2AC2047E20B685A3000F20FD /* Fitness Tracker */,
-				2AC2049420B685A5000F20FD /* Fitness TrackerTests */,
-				2AC2049F20B685A5000F20FD /* Fitness TrackerUITests */,
+				2AC2047E20B685A3000F20FD /* fitness-tracker */,
+				2AC2049420B685A5000F20FD /* fitness-trackerTests */,
+				2AC2049F20B685A5000F20FD /* fitness-trackerUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,7 +292,10 @@
 			files = (
 				2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */,
 				2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */,
-				2AC2048520B685A3000F20FD /* FirstViewController.swift in Sources */,
+				2AE1C11520B8A88800E0095D /* ThirdViewController.swift in Sources */,
+				2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */,
+				2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */,
+				2AE1C11720B8A89D00E0095D /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC2049A20B685A5000F20FD /* Fitness_TrackerTests.swift in Sources */,
+				2AC2049A20B685A5000F20FD /* fitness-tracker-tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AC204A520B685A5000F20FD /* Fitness_TrackerUITests.swift in Sources */,
+				2ABF7A0A21483BF2000BF0A7 /* fitness-tracker-UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,12 +320,12 @@
 /* Begin PBXTargetDependency section */
 		2AC2049720B685A5000F20FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2AC2047E20B685A3000F20FD /* Fitness Tracker */;
+			target = 2AC2047E20B685A3000F20FD /* fitness-tracker */;
 			targetProxy = 2AC2049620B685A5000F20FD /* PBXContainerItemProxy */;
 		};
 		2AC204A220B685A5000F20FD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2AC2047E20B685A3000F20FD /* Fitness Tracker */;
+			target = 2AC2047E20B685A3000F20FD /* fitness-tracker */;
 			targetProxy = 2AC204A120B685A5000F20FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -434,14 +468,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "fitness-tracker/fitness-tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5KGUC2LR5;
-				INFOPLIST_FILE = "Fitness Tracker/Info.plist";
+				INFOPLIST_FILE = "fitness-tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bz.Fitness-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bz.fitness-tracker-bz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,14 +487,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "fitness-tracker/fitness-tracker.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5KGUC2LR5;
-				INFOPLIST_FILE = "Fitness Tracker/Info.plist";
+				INFOPLIST_FILE = "fitness-tracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bz.Fitness-Tracker";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bz.fitness-tracker-bz";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,7 +519,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitness Tracker.app/Fitness Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitness-tracker.app/fitness-tracker";
 			};
 			name = Debug;
 		};
@@ -504,7 +540,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fitness Tracker.app/Fitness Tracker";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fitness-tracker.app/fitness-tracker";
 			};
 			name = Release;
 		};
@@ -551,7 +587,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2AC2047A20B685A3000F20FD /* Build configuration list for PBXProject "Fitness Tracker" */ = {
+		2AC2047A20B685A3000F20FD /* Build configuration list for PBXProject "fitness-tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC204A720B685A5000F20FD /* Debug */,
@@ -560,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC204A920B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness Tracker" */ = {
+		2AC204A920B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC204AA20B685A5000F20FD /* Debug */,
@@ -569,7 +605,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC204AC20B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness TrackerTests" */ = {
+		2AC204AC20B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-trackerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC204AD20B685A5000F20FD /* Debug */,
@@ -578,7 +614,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2AC204AF20B685A5000F20FD /* Build configuration list for PBXNativeTarget "Fitness TrackerUITests" */ = {
+		2AC204AF20B685A5000F20FD /* Build configuration list for PBXNativeTarget "fitness-trackerUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2AC204B020B685A5000F20FD /* Debug */,

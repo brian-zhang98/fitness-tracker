@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Fitness Tracker.xcodeproj">
+      location = "self:/Users/brian.zhang/projects/Fitness Tracker/fitness-tracker.xcodeproj">
    </FileRef>
 </Workspace>

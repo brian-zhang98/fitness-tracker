@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We&apos;ll be using your health kit information to accurately track your daily steps taken.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We generally will not be writing to your health kit, but these permissions are necessary for the health kit to function properly.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
