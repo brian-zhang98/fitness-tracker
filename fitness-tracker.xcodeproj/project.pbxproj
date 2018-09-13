@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CAF0C20CB011000A9EE3D /* MyCell.swift */; };
 		2ABF7A0A21483BF2000BF0A7 /* fitness-tracker-UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */; };
+		2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */; };
 		2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048220B685A3000F20FD /* AppDelegate.swift */; };
 		2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */; };
 		2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048620B685A3000F20FD /* SecondViewController.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		2A9CAF0C20CB011000A9EE3D /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitUtils.swift; sourceTree = "<group>"; };
 		2AC2047F20B685A3000F20FD /* fitness-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC2048220B685A3000F20FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalsViewController.swift; sourceTree = "<group>"; };
@@ -111,8 +113,9 @@
 			children = (
 				2AC204B220B68635000F20FD /* fitness-tracker.entitlements */,
 				2AC2048220B685A3000F20FD /* AppDelegate.swift */,
-				2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */,
 				2A9CAF0C20CB011000A9EE3D /* MyCell.swift */,
+				2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */,
+				2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */,
 				2AC2048620B685A3000F20FD /* SecondViewController.swift */,
 				2AE1C11420B8A88800E0095D /* ThirdViewController.swift */,
 				2AE1C11620B8A89D00E0095D /* FourthViewController.swift */,
@@ -292,6 +295,7 @@
 			files = (
 				2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */,
 				2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */,
+				2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */,
 				2AE1C11520B8A88800E0095D /* ThirdViewController.swift in Sources */,
 				2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */,
 				2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */,

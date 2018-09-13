@@ -10,25 +10,22 @@ import UIKit
 
 class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-//    let healthStore = HKHealthStore()
-//
-//    func getTodaysSteps(completion: @escaping (Double) -> Void) {
-//        let stepsQuantityType = HKQuantityType.quantityType(forIdentifier: .stepCount)!
-//
-//        let now = Date()
-//        let startOfDay = Calendar.current.startOfDay(for: now)
-//        let predicate = HKQuery.predicateForSamples(withStart: startOfDay, end: now, options: .strictStartDate)
-//
-//        let query = HKStatisticsQuery(quantityType: stepsQuantityType, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, result, _ in
-//            guard let result = result, let sum = result.sumQuantity() else {
-//                completion(0.0)
-//                return
-//            }
-//            completion(sum.doubleValue(for: HKUnit.count()))
-//        }
-//
-//        healthStore.execute(query)
-//    }
+    struct stepsData {
+        var text:String
+        var count:String
+    }
+    
+    var stepsTableData: [stepsData] = []
+    
+    var stepsToday = String(1000)
+    
+    func getTodaysSteps() {
+        HealthKitSetupAssistant.getTodaysSteps { (result) in
+            print("steps: ")
+            print(String("\(result)"))
+            self.stepsToday = String("\(result)")
+        }
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stepsTableData.count
@@ -44,24 +41,14 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
         return cell
     }
     
-
-    struct stepsData {
-        var text:String
-        var count:String
-    }
-    
-    var stepsTableData: [stepsData] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-//        var stepsToday = getTodaysSteps()
-
-        let stepsToday = String(1000)
+        
+        getTodaysSteps()
         
         stepsTableData = [
-            stepsData(text: "Steps Taken Today: ", count: stepsToday),
+            stepsData(text: "Steps Taken Today: ", count: self.stepsToday),
             stepsData(text: "Daily Goal: ", count: "2000" ),
             stepsData(text: "Progress: ", count: "50%" )
         ]
