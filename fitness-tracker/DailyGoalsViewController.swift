@@ -16,21 +16,34 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     var stepsTableData: [stepsData] = []
+    var stepsToday: Double!
+    var dailyGoal: Double!
     
-    var stepsToday = String(1000)
+    func setStepsTableData() {
+        self.stepsTableData = [
+            stepsData(text: "Steps Taken Today: ", count: String(Int(self.stepsToday))),
+            stepsData(text: "Daily Goal: ", count: String(Int(self.dailyGoal))),
+            stepsData(text: "Progress: ", count: String((self.stepsToday / self.dailyGoal) * 100) + "%")
+        ]
+    }
     
+    //gets steps from health kit and updates steps table data
     func getTodaysSteps() {
         HealthKitSetupAssistant.getTodaysSteps { (result) in
             print("steps: ")
             print(String("\(result)"))
-            self.stepsToday = String("\(result)")
+            self.stepsToday = Double("\(result)")
+            self.dailyGoal = 2000
+            self.setStepsTableData()
         }
     }
     
+    //for the tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return stepsTableData.count
     }
     
+    //more for the tableview
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "steps") as! MyCell
         
@@ -43,15 +56,9 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a
         
         getTodaysSteps()
-        
-        stepsTableData = [
-            stepsData(text: "Steps Taken Today: ", count: self.stepsToday),
-            stepsData(text: "Daily Goal: ", count: "2000" ),
-            stepsData(text: "Progress: ", count: "50%" )
-        ]
     }
 
     override func didReceiveMemoryWarning() {
