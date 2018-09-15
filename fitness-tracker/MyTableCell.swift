@@ -1,5 +1,5 @@
 //
-//  MyCell.swift
+//  MyTableCell.swift
 //  Fitness Tracker
 //
 //  Created by BRIAN ZHANG on 6/8/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyCell: UITableViewCell {
+class MyTableCell: UITableViewCell {
     
     @IBOutlet weak var myTextLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!

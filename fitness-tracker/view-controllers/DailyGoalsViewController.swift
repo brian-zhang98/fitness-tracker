@@ -45,7 +45,7 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     
     //more for the tableview
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "steps") as! MyCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "steps") as! MyTableCell
         
         cell.myTextLabel.text = stepsTableData[indexPath.row].text
         

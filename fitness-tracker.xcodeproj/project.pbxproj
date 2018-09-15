@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CAF0C20CB011000A9EE3D /* MyCell.swift */; };
+		2A9CAF0D20CB011000A9EE3D /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */; };
 		2ABF7A0A21483BF2000BF0A7 /* fitness-tracker-UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */; };
 		2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */; };
 		2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048220B685A3000F20FD /* AppDelegate.swift */; };
@@ -40,16 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2A9CAF0C20CB011000A9EE3D /* MyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
-		2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitUtils.swift; sourceTree = "<group>"; };
+		2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableCell.swift; path = "fitness-tracker/MyTableCell.swift"; sourceTree = SOURCE_ROOT; };
+		2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthKitUtils.swift; path = "fitness-tracker/HealthKitUtils.swift"; sourceTree = SOURCE_ROOT; };
 		2AC2047F20B685A3000F20FD /* fitness-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AC2048220B685A3000F20FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyGoalsViewController.swift; sourceTree = "<group>"; };
-		2AC2048620B685A3000F20FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2AC2048220B685A3000F20FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "fitness-tracker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
+		2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyGoalsViewController.swift; path = "fitness-tracker/view-controllers/DailyGoalsViewController.swift"; sourceTree = SOURCE_ROOT; };
+		2AC2048620B685A3000F20FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = "fitness-tracker/view-controllers/SecondViewController.swift"; sourceTree = SOURCE_ROOT; };
 		2AC2048920B685A3000F20FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2AC2048B20B685A5000F20FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AC2048B20B685A5000F20FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "fitness-tracker/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		2AC2048E20B685A5000F20FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2AC2049020B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC2049020B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "fitness-tracker/Info.plist"; sourceTree = SOURCE_ROOT; };
 		2AC2049520B685A5000F20FD /* fitness-trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fitness-trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC2049920B685A5000F20FD /* fitness-tracker-tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "fitness-tracker-tests.swift"; sourceTree = "<group>"; };
 		2AC2049B20B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 		2AC204A620B685A5000F20FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AC204B220B68635000F20FD /* fitness-tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "fitness-tracker.entitlements"; sourceTree = "<group>"; };
 		2AC204B420B68638000F20FD /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
-		2AE1C11420B8A88800E0095D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		2AE1C11620B8A89D00E0095D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		2AE1C11420B8A88800E0095D /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThirdViewController.swift; path = "fitness-tracker/view-controllers/ThirdViewController.swift"; sourceTree = SOURCE_ROOT; };
+		2AE1C11620B8A89D00E0095D /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FourthViewController.swift; path = "fitness-tracker/view-controllers/FourthViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABF7A0E214D84CC000BF0A7 /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */,
+				2AC2048620B685A3000F20FD /* SecondViewController.swift */,
+				2AE1C11420B8A88800E0095D /* ThirdViewController.swift */,
+				2AE1C11620B8A89D00E0095D /* FourthViewController.swift */,
+			);
+			path = "view-controllers";
+			sourceTree = "<group>";
+		};
 		2AC2047620B685A3000F20FD = {
 			isa = PBXGroup;
 			children = (
@@ -112,13 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				2AC204B220B68635000F20FD /* fitness-tracker.entitlements */,
+				2ABF7A0E214D84CC000BF0A7 /* view-controllers */,
 				2AC2048220B685A3000F20FD /* AppDelegate.swift */,
-				2A9CAF0C20CB011000A9EE3D /* MyCell.swift */,
-				2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */,
+				2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */,
 				2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */,
-				2AC2048620B685A3000F20FD /* SecondViewController.swift */,
-				2AE1C11420B8A88800E0095D /* ThirdViewController.swift */,
-				2AE1C11620B8A89D00E0095D /* FourthViewController.swift */,
 				2AC2048820B685A3000F20FD /* Main.storyboard */,
 				2AC2048B20B685A5000F20FD /* Assets.xcassets */,
 				2AC2048D20B685A5000F20FD /* LaunchScreen.storyboard */,
@@ -297,7 +305,7 @@
 				2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */,
 				2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */,
 				2AE1C11520B8A88800E0095D /* ThirdViewController.swift in Sources */,
-				2A9CAF0D20CB011000A9EE3D /* MyCell.swift in Sources */,
+				2A9CAF0D20CB011000A9EE3D /* MyTableCell.swift in Sources */,
 				2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */,
 				2AE1C11720B8A89D00E0095D /* FourthViewController.swift in Sources */,
 			);
