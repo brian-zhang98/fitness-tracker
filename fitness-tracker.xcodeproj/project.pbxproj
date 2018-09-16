@@ -10,6 +10,7 @@
 		2A9CAF0D20CB011000A9EE3D /* MyTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */; };
 		2ABF7A0A21483BF2000BF0A7 /* fitness-tracker-UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC204A420B685A5000F20FD /* fitness-tracker-UITests.swift */; };
 		2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */; };
+		2ABF7A10214DB1A1000BF0A7 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABF7A0F214DB1A1000BF0A7 /* MyCollectionViewCell.swift */; };
 		2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048220B685A3000F20FD /* AppDelegate.swift */; };
 		2AC2048520B685A3000F20FD /* DailyGoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */; };
 		2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC2048620B685A3000F20FD /* SecondViewController.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyTableCell.swift; path = "fitness-tracker/MyTableCell.swift"; sourceTree = SOURCE_ROOT; };
 		2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HealthKitUtils.swift; path = "fitness-tracker/HealthKitUtils.swift"; sourceTree = SOURCE_ROOT; };
+		2ABF7A0F214DB1A1000BF0A7 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = "fitness-tracker/MyCollectionViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		2AC2047F20B685A3000F20FD /* fitness-tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AC2048220B685A3000F20FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "fitness-tracker/AppDelegate.swift"; sourceTree = SOURCE_ROOT; };
 		2AC2048420B685A3000F20FD /* DailyGoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyGoalsViewController.swift; path = "fitness-tracker/view-controllers/DailyGoalsViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -128,6 +130,7 @@
 				2A9CAF0C20CB011000A9EE3D /* MyTableCell.swift */,
 				2ABF7A0B21488F2D000BF0A7 /* HealthKitUtils.swift */,
 				2AC2048820B685A3000F20FD /* Main.storyboard */,
+				2ABF7A0F214DB1A1000BF0A7 /* MyCollectionViewCell.swift */,
 				2AC2048B20B685A5000F20FD /* Assets.xcassets */,
 				2AC2048D20B685A5000F20FD /* LaunchScreen.storyboard */,
 				2AC2049020B685A5000F20FD /* Info.plist */,
@@ -303,6 +306,7 @@
 			files = (
 				2AC2048720B685A3000F20FD /* SecondViewController.swift in Sources */,
 				2AC2048320B685A3000F20FD /* AppDelegate.swift in Sources */,
+				2ABF7A10214DB1A1000BF0A7 /* MyCollectionViewCell.swift in Sources */,
 				2ABF7A0C21488F2D000BF0A7 /* HealthKitUtils.swift in Sources */,
 				2AE1C11520B8A88800E0095D /* ThirdViewController.swift in Sources */,
 				2A9CAF0D20CB011000A9EE3D /* MyTableCell.swift in Sources */,

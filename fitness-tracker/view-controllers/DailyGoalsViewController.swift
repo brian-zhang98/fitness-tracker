@@ -8,23 +8,63 @@
 
 import UIKit
 
-class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    struct stepsData {
+    //steps table stuff
+    struct data {
         var text:String
         var count:String
     }
     
-    var stepsTableData: [stepsData] = []
+    var stepsTableData: [data] = []
     var stepsToday: Double!
-    var dailyGoal: Double!
+    var dailyStepsGoal: Double!
     
     func setStepsTableData() {
         self.stepsTableData = [
-            stepsData(text: "Steps Taken Today: ", count: String(Int(self.stepsToday))),
-            stepsData(text: "Daily Goal: ", count: String(Int(self.dailyGoal))),
-            stepsData(text: "Progress: ", count: String((self.stepsToday / self.dailyGoal) * 100) + "%")
+            data(text: "Steps Taken Today: ", count: String(Int(self.stepsToday))),
+            data(text: "Daily Goal: ", count: String(Int(self.dailyStepsGoal))),
+            data(text: "Progress: ", count: String((self.stepsToday / self.dailyStepsGoal) * 100) + "%")
         ]
+    }
+    
+    //calorie collection view stuff
+    let reuseIdentifier = "caloriesCell"
+    
+    var caloriesData: [data] = []
+    var caloriesToday: Double!
+    var dailyCaloriesGoal: Double!
+    
+    func setCaloriesData() {
+        print("this happened")
+        self.caloriesToday = 1000
+        self.dailyCaloriesGoal = 2500
+        
+        self.caloriesData = [
+            data(text: "Calories Consumed", count: String(Int(self.caloriesToday))),
+            data(text: "Daily Goal", count: String(Int(self.dailyCaloriesGoal))),
+            data(text: "Progress", count: String((self.caloriesToday / self.dailyCaloriesGoal) * 100) + "%")
+        ]
+        print("this happened at the end too")
+        print(self.caloriesData.count)
+    }
+    
+    // tell the collection view how many cells to make
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.caloriesData.count
+    }
+    
+    // make a cell for each cell index path
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        // get a reference to our storyboard cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
+        
+        // Use the outlet in our custom class to get a reference to the UILabel in the cell
+        cell.textLabel.text = self.caloriesData[indexPath.item].text
+        cell.countLabel.text = self.caloriesData[indexPath.item].count
+        
+        return cell
     }
     
     //gets steps from health kit and updates steps table data
@@ -33,14 +73,14 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
             print("steps: ")
             print(String("\(result)"))
             self.stepsToday = Double("\(result)")
-            self.dailyGoal = 2000
+            self.dailyStepsGoal = 2000
             self.setStepsTableData()
         }
     }
     
     //for the tableview
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return stepsTableData.count
+        return self.stepsTableData.count
     }
     
     //more for the tableview
@@ -58,6 +98,7 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a
         
+        self.setCaloriesData()
         getTodaysSteps()
     }
 
