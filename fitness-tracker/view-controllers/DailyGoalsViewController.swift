@@ -29,14 +29,13 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     }
     
     //calorie collection view stuff
-    let reuseIdentifier = "caloriesCell"
+    let reuseIdentifierCalorie = "caloriesCell"
     
     var caloriesData: [data] = []
     var caloriesToday: Double!
     var dailyCaloriesGoal: Double!
     
     func setCaloriesData() {
-        print("this happened")
         self.caloriesToday = 1000
         self.dailyCaloriesGoal = 2500
         
@@ -45,26 +44,58 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
             data(text: "Daily Goal", count: String(Int(self.dailyCaloriesGoal))),
             data(text: "Progress", count: String((self.caloriesToday / self.dailyCaloriesGoal) * 100) + "%")
         ]
-        print("this happened at the end too")
-        print(self.caloriesData.count)
+    }
+    
+    //exercise collection view stuff
+    let reuseIdentifierExercise = "exerciseCell"
+    
+    var exerciseData: [data] = []
+    
+    func setExerciseData() {
+        self.exerciseData = [
+            data(text: "Pushups Done: 75/100", count: "75%"),
+            data(text: "Situps Done: 100/100", count: "Done!"),
+            data(text: "Pullups Done: 30/45", count: "67%")
+        ]
     }
     
     // tell the collection view how many cells to make
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.caloriesData.count
+        if (collectionView.tag == 1)
+        {
+            return self.caloriesData.count
+        }
+        else
+        {
+            return self.exerciseData.count
+        }
     }
     
     // make a cell for each cell index path
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        // get a reference to our storyboard cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! MyCollectionViewCell
+        if(collectionView.tag == 1)
+        {
+            // get a reference to our storyboard cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierCalorie, for: indexPath as IndexPath) as! MyCalorieCell
         
-        // Use the outlet in our custom class to get a reference to the UILabel in the cell
-        cell.textLabel.text = self.caloriesData[indexPath.item].text
-        cell.countLabel.text = self.caloriesData[indexPath.item].count
-        
-        return cell
+            // Use the outlet in our custom class to get a reference to the UILabel in the cell
+            cell.textLabel.text = self.caloriesData[indexPath.item].text
+            cell.countLabel.text = self.caloriesData[indexPath.item].count
+            
+            return cell
+        }
+        else
+        {
+            // get a reference to our storyboard cell
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifierExercise, for: indexPath as IndexPath) as! MyExerciseCell
+            
+            // Use the outlet in our custom class to get a reference to the UILabel in the cell
+            cell.textLabel.text = self.exerciseData[indexPath.item].text
+            cell.completionLabel.text = self.exerciseData[indexPath.item].count
+            
+            return cell
+        }
     }
     
     //gets steps from health kit and updates steps table data
@@ -99,6 +130,7 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
         // Do any additional setup after loading the view, typically from a
         
         self.setCaloriesData()
+        self.setExerciseData()
         getTodaysSteps()
     }
 
