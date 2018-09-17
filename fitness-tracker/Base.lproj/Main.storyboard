@@ -32,7 +32,7 @@
                                     <constraint firstAttribute="height" constant="138" id="09v-ad-sB6"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="steps" rowHeight="110" id="YAh-ls-lfx" customClass="MyTableCell" customModule="fitness_tracker" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="steps" rowHeight="110" id="YAh-ls-lfx" customClass="MyTableCell" customModule="fitness_tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="327" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YAh-ls-lfx" id="ydf-7s-E9F">
@@ -164,6 +164,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.095676369859999999" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="completionLabel" destination="gT6-v1-TGp" id="uJN-sc-bUX"/>
                                             <outlet property="textLabel" destination="1Eu-Vb-Kr8" id="kkc-uh-35n"/>
@@ -197,7 +198,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Daily Goals" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Daily Goals" image="calendar" selectedImage="calendar" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -236,7 +237,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Gym" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Gym" image="dumbbell" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -251,13 +252,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nutrition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-HV-SIH">
-                                <rect key="frame" x="120.5" y="312.5" width="134" height="43"/>
+                                <rect key="frame" x="120.5" y="312" width="134" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories, macros, etc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdt-qz-QmE">
-                                <rect key="frame" x="118" y="363.5" width="140" height="17"/>
+                                <rect key="frame" x="117.5" y="363" width="140" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -272,7 +273,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="av2-gs-Uty"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Nutrition" id="oSq-om-vBA"/>
+                    <tabBarItem key="tabBarItem" title="Nutrition" image="food" id="oSq-om-vBA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1x-g1-HIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -288,13 +289,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y44-dZ-Qb1">
-                                <rect key="frame" x="154" y="312.5" width="67" height="43"/>
+                                <rect key="frame" x="154" y="312" width="67" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recommended workouts, calories, steps, etc." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z55-VL-OQ6">
-                                <rect key="frame" x="41" y="363.5" width="293.5" height="17"/>
+                                <rect key="frame" x="41" y="363" width="293.5" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -309,7 +310,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jZv-9e-WBB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Plan" id="zqo-nB-89m"/>
+                    <tabBarItem key="tabBarItem" title="Plan" image="plan" id="zqo-nB-89m"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFO-74-P42" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -348,7 +349,9 @@
     </scenes>
     <resources>
         <image name="banner" width="250" height="50"/>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="calendar" width="23" height="23"/>
+        <image name="dumbbell" width="23" height="23"/>
+        <image name="food" width="23" height="23"/>
+        <image name="plan" width="23" height="23"/>
     </resources>
 </document>
