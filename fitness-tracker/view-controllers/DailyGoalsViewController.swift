@@ -50,12 +50,29 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     let reuseIdentifierExercise = "exerciseCell"
     
     var exerciseData: [data] = []
-    
+    var pushupsGoal: Int!
+    var pushupsCompleted: Int!
+    var situpsGoal: Int!
+    var situpsCompleted: Int!
+    var pullupsGoal: Int!
+    var pullupsCompleted: Int!
+
     func setExerciseData() {
+        self.pushupsGoal = 100
+        self.pushupsCompleted = 75
+        self.situpsGoal = 100
+        self.situpsCompleted = 100
+        self.pullupsGoal = 50
+        self.pullupsCompleted = 35
+        
+        let pushupsCount = (self.pushupsGoal == self.pushupsCompleted) ? "Done!" : String(self.pushupsGoal / self.pushupsCompleted * 100) + "%"
+        let situpsCount = (self.situpsGoal == self.situpsCompleted) ? "Done!" : String(self.situpsGoal / self.situpsCompleted * 100) + "%"
+        let pullupsCount = (self.pullupsGoal == self.pullupsCompleted) ? "Done!" : String(self.pullupsGoal / self.pullupsCompleted * 100) + "%"
+        
         self.exerciseData = [
-            data(text: "Pushups Done: 75/100", count: "75%"),
-            data(text: "Situps Done: 100/100", count: "Done!"),
-            data(text: "Pullups Done: 30/45", count: "67%")
+            data(text: "Pushups Done: " + String(self.pushupsCompleted) + "/" + String(self.pushupsGoal), count: pushupsCount),
+            data(text: "Situps Done: " + String(self.situpsCompleted) + "/" + String(self.situpsGoal), count: situpsCount),
+            data(text: "Pullups Done: " + String(self.pullupsCompleted) + "/" + String(self.pullupsGoal), count: pullupsCount)
         ]
     }
     
@@ -93,6 +110,11 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
             // Use the outlet in our custom class to get a reference to the UILabel in the cell
             cell.textLabel.text = self.exerciseData[indexPath.item].text
             cell.completionLabel.text = self.exerciseData[indexPath.item].count
+            
+            if(cell.completionLabel.text == "Done!")
+            {
+                cell.completionLabel.textColor = UIColor.green
+            }
             
             return cell
         }
