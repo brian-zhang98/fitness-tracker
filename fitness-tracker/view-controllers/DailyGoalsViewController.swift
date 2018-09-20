@@ -50,12 +50,12 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
     let reuseIdentifierExercise = "exerciseCell"
     
     var exerciseData: [data] = []
-    var pushupsGoal: Int!
-    var pushupsCompleted: Int!
-    var situpsGoal: Int!
-    var situpsCompleted: Int!
-    var pullupsGoal: Int!
-    var pullupsCompleted: Int!
+    var pushupsGoal: Double!
+    var pushupsCompleted: Double!
+    var situpsGoal: Double!
+    var situpsCompleted: Double!
+    var pullupsGoal: Double!
+    var pullupsCompleted: Double!
 
     func setExerciseData() {
         self.pushupsGoal = 100
@@ -65,14 +65,14 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
         self.pullupsGoal = 50
         self.pullupsCompleted = 35
         
-        let pushupsCount = (self.pushupsGoal == self.pushupsCompleted) ? "Done!" : String(self.pushupsGoal / self.pushupsCompleted * 100) + "%"
-        let situpsCount = (self.situpsGoal == self.situpsCompleted) ? "Done!" : String(self.situpsGoal / self.situpsCompleted * 100) + "%"
-        let pullupsCount = (self.pullupsGoal == self.pullupsCompleted) ? "Done!" : String(self.pullupsGoal / self.pullupsCompleted * 100) + "%"
+        let pushupsCount = (self.pushupsGoal == self.pushupsCompleted) ? "Done!" : String(self.pushupsCompleted / self.pushupsGoal * 100) + "%"
+        let situpsCount = (self.situpsGoal == self.situpsCompleted) ? "Done!" : String(self.situpsCompleted / self.situpsGoal * 100) + "%"
+        let pullupsCount = (self.pullupsGoal == self.pullupsCompleted) ? "Done!" : String(self.pullupsCompleted / self.pullupsGoal * 100) + "%"
         
         self.exerciseData = [
-            data(text: "Pushups Done: " + String(self.pushupsCompleted) + "/" + String(self.pushupsGoal), count: pushupsCount),
-            data(text: "Situps Done: " + String(self.situpsCompleted) + "/" + String(self.situpsGoal), count: situpsCount),
-            data(text: "Pullups Done: " + String(self.pullupsCompleted) + "/" + String(self.pullupsGoal), count: pullupsCount)
+            data(text: "Pushups Done: " + String(Int(self.pushupsCompleted)) + "/" + String(Int(self.pushupsGoal)), count: pushupsCount),
+            data(text: "Situps Done: " + String(Int(self.situpsCompleted)) + "/" + String(Int(self.situpsGoal)), count: situpsCount),
+            data(text: "Pullups Done: " + String(Int(self.pullupsCompleted)) + "/" + String(Int(self.pullupsGoal)), count: pullupsCount)
         ]
     }
     
