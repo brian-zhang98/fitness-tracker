@@ -65,9 +65,9 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
         self.pullupsGoal = 50
         self.pullupsCompleted = 35
         
-        let pushupsCount = (self.pushupsGoal == self.pushupsCompleted) ? "✓" : String(self.pushupsCompleted / self.pushupsGoal * 100) + "%"
-        let situpsCount = (self.situpsGoal == self.situpsCompleted) ? "✓" : String(self.situpsCompleted / self.situpsGoal * 100) + "%"
-        let pullupsCount = (self.pullupsGoal == self.pullupsCompleted) ? "✓" : String(self.pullupsCompleted / self.pullupsGoal * 100) + "%"
+        let pushupsCount = (self.pushupsGoal == self.pushupsCompleted) ? "✓ Done" : String(self.pushupsCompleted / self.pushupsGoal * 100) + "%"
+        let situpsCount = (self.situpsGoal == self.situpsCompleted) ? "✓ Done" : String(self.situpsCompleted / self.situpsGoal * 100) + "%"
+        let pullupsCount = (self.pullupsGoal == self.pullupsCompleted) ? "✓ Done" : String(self.pullupsCompleted / self.pullupsGoal * 100) + "%"
         
         self.exerciseData = [
             data(text: "Pushups Done: " + String(Int(self.pushupsCompleted)) + "/" + String(Int(self.pushupsGoal)), count: pushupsCount),
@@ -111,9 +111,9 @@ class DailyGoalsViewController: UIViewController, UITableViewDelegate, UITableVi
             cell.textLabel.text = self.exerciseData[indexPath.item].text
             cell.completionLabel.text = self.exerciseData[indexPath.item].count
             
-            if(cell.completionLabel.text == "✓")
+            if(cell.completionLabel.text == "✓ Done")
             {
-                cell.completionLabel.textColor = UIColor.green
+                cell.completionLabel.textColor = UIColor(hue: 145/360, saturation: 100/100, brightness: 66/100, alpha: 1.0)
             }
             
             return cell
