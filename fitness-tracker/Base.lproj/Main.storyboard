@@ -230,8 +230,52 @@
                                     <constraint firstAttribute="height" constant="75" id="4dR-RL-M1h"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember to bring..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-x4-ugJ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-7f-W0c">
+                                <rect key="frame" x="16" y="140" width="327" height="164"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LLR-Pt-ACe">
+                                    <size key="itemSize" width="327" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ruJ-Uc-znU">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfz-Pd-5s8">
+                                                    <rect key="frame" x="258" y="10" width="46" height="30"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fcn-gd-noh">
+                                                    <rect key="frame" x="8" y="10" width="150" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="u4Q-sC-c0f"/>
+                                                    </constraints>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="bfz-Pd-5s8" secondAttribute="trailing" constant="15" id="3bS-cW-WOB"/>
+                                            <constraint firstItem="Fcn-gd-noh" firstAttribute="centerY" secondItem="ruJ-Uc-znU" secondAttribute="centerY" id="D8V-Uc-axd"/>
+                                            <constraint firstItem="Fcn-gd-noh" firstAttribute="leading" secondItem="ruJ-Uc-znU" secondAttribute="leadingMargin" id="w6l-kb-3RA"/>
+                                            <constraint firstItem="Fcn-gd-noh" firstAttribute="top" secondItem="bfz-Pd-5s8" secondAttribute="top" id="yho-fZ-0Eg"/>
+                                        </constraints>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember to bring..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrB-MO-nfx">
                                 <rect key="frame" x="16" y="111" width="161" height="21"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -243,13 +287,17 @@
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="16N-DY-NLk"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="bM6-Gx-CLp" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="FMQ-YB-Io1"/>
+                            <constraint firstItem="zrB-MO-nfx" firstAttribute="top" secondItem="bM6-Gx-CLp" secondAttribute="bottom" constant="16" id="J94-au-MQo"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstItem="8Je-x4-ugJ" firstAttribute="top" secondItem="bM6-Gx-CLp" secondAttribute="bottom" constant="16" id="MHx-gO-eO3"/>
-                            <constraint firstItem="8Je-x4-ugJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="TIm-1s-3ge"/>
+                            <constraint firstItem="fkD-7f-W0c" firstAttribute="top" secondItem="zrB-MO-nfx" secondAttribute="bottom" constant="8" id="QQy-Vl-G69"/>
                             <constraint firstItem="bM6-Gx-CLp" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Vzo-Eh-baG"/>
+                            <constraint firstItem="zrB-MO-nfx" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="gZ3-fI-WG1"/>
+                            <constraint firstItem="fkD-7f-W0c" firstAttribute="trailing" secondItem="NDk-cv-Gan" secondAttribute="trailing" id="hiA-Yp-A8X"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstItem="zEq-FU-wV5" firstAttribute="top" secondItem="fkD-7f-W0c" secondAttribute="bottom" constant="8" symbolic="YES" id="sfz-b4-lQo"/>
                             <constraint firstItem="bM6-Gx-CLp" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="v9o-KZ-2X4"/>
+                            <constraint firstItem="fkD-7f-W0c" firstAttribute="leading" secondItem="zrB-MO-nfx" secondAttribute="leading" id="ygA-9N-gJr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
