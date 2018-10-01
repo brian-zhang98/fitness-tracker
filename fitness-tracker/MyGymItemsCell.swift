@@ -10,6 +10,9 @@ import UIKit
 
 class MyGymItemsCell: UICollectionViewCell {
     
+    @IBOutlet weak var gymItem: UITextField!
+    @IBOutlet weak var gymCheckbox: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

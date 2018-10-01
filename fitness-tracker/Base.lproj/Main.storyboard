@@ -240,7 +240,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ruJ-Uc-znU">
+                                    <collectionViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="gymListCell" id="ruJ-Uc-znU" customClass="MyGymItemsCell" customModule="fitness_tracker" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -261,6 +261,9 @@
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="poop:" destination="uUM-y9-QQt" eventType="editingDidEnd" id="qtF-qx-jXx"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </view>
@@ -270,8 +273,16 @@
                                             <constraint firstItem="Fcn-gd-noh" firstAttribute="leading" secondItem="ruJ-Uc-znU" secondAttribute="leadingMargin" id="w6l-kb-3RA"/>
                                             <constraint firstItem="Fcn-gd-noh" firstAttribute="top" secondItem="bfz-Pd-5s8" secondAttribute="top" id="yho-fZ-0Eg"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="gymCheckbox" destination="bfz-Pd-5s8" id="ku5-ue-FkH"/>
+                                            <outlet property="gymItem" destination="Fcn-gd-noh" id="HTp-Bl-gvA"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8rJ-Kc-sve" id="e27-Mj-9AO"/>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="osJ-xr-LrN"/>
+                                </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember to bring..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrB-MO-nfx">
                                 <rect key="frame" x="16" y="111" width="161" height="21"/>
@@ -304,6 +315,7 @@
                     <tabBarItem key="tabBarItem" title="Gym" image="dumbbell" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <exit id="uUM-y9-QQt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
         </scene>
