@@ -20,7 +20,7 @@ class GymViewController: UIViewController, UICollectionViewDataSource, UICollect
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return gymItemsData.count
-        return 3
+        return (gymItemsData.count == 0) ? 1 : gymItemsData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
