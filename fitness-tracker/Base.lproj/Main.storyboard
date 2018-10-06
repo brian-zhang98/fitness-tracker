@@ -231,7 +231,7 @@
                                 </constraints>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fkD-7f-W0c">
-                                <rect key="frame" x="16" y="140" width="327" height="164"/>
+                                <rect key="frame" x="16" y="141" width="327" height="163"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LLR-Pt-ACe">
                                     <size key="itemSize" width="327" height="50"/>
@@ -285,29 +285,37 @@
                                 </connections>
                             </collectionView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember to bring..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrB-MO-nfx">
-                                <rect key="frame" x="16" y="111" width="161" height="21"/>
+                                <rect key="frame" x="16" y="111" width="161" height="22"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44g-hi-9Mn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44g-hi-9Mn">
                                 <rect key="frame" x="313" y="106" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6n7-S5-eaz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="8rJ-Kc-sve" eventType="primaryActionTriggered" id="9Fz-pD-Hzz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="16N-DY-NLk"/>
+                            <constraint firstItem="44g-hi-9Mn" firstAttribute="centerY" secondItem="zrB-MO-nfx" secondAttribute="centerY" constant="-1" id="5lZ-fq-nVp"/>
+                            <constraint firstItem="44g-hi-9Mn" firstAttribute="trailing" secondItem="fkD-7f-W0c" secondAttribute="trailing" id="CtJ-F2-Bdc"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
                             <constraint firstItem="bM6-Gx-CLp" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="FMQ-YB-Io1"/>
                             <constraint firstItem="zrB-MO-nfx" firstAttribute="top" secondItem="bM6-Gx-CLp" secondAttribute="bottom" constant="16" id="J94-au-MQo"/>
                             <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
+                            <constraint firstItem="fkD-7f-W0c" firstAttribute="top" secondItem="44g-hi-9Mn" secondAttribute="bottom" constant="5" id="P4o-Fv-Coh"/>
                             <constraint firstItem="fkD-7f-W0c" firstAttribute="top" secondItem="zrB-MO-nfx" secondAttribute="bottom" constant="8" id="QQy-Vl-G69"/>
                             <constraint firstItem="bM6-Gx-CLp" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Vzo-Eh-baG"/>
                             <constraint firstItem="zrB-MO-nfx" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="16" id="gZ3-fI-WG1"/>
@@ -321,6 +329,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gym" image="dumbbell" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="addItemButton" destination="44g-hi-9Mn" id="PA1-MX-Odi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <exit id="uUM-y9-QQt" userLabel="Exit" sceneMemberID="exit"/>

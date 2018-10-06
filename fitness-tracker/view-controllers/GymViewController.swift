@@ -15,8 +15,14 @@ class GymViewController: UIViewController, UICollectionViewDataSource, UICollect
         var done:Bool
     }
     
+    @IBOutlet weak var addItemButton: UIButton!
+    
     let reuseIdentifier = "gymListCell"
     var gymItemsData: [itemData] = [itemData(text: "", done: false)]
+    
+    @IBAction func buttonPressed(_ sender: Any) {
+        print("hello")
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return gymItemsData.count
