@@ -10,17 +10,17 @@ import UIKit
 
 class GymViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
-    struct data {
+    struct itemData {
         var text:String
-        var count:String
+        var done:Bool
     }
     
     let reuseIdentifier = "gymListCell"
-    var gymItemsData: [data] = []
+    var gymItemsData: [itemData] = [itemData(text: "", done: false)]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //return gymItemsData.count
-        return (gymItemsData.count == 0) ? 1 : gymItemsData.count
+        return gymItemsData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
