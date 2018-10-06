@@ -19,7 +19,6 @@ class GymViewController: UIViewController, UICollectionViewDataSource, UICollect
     var gymItemsData: [itemData] = [itemData(text: "", done: false)]
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //return gymItemsData.count
         return gymItemsData.count
     }
     
