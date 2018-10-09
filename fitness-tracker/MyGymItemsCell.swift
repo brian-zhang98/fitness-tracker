@@ -17,4 +17,10 @@ class MyGymItemsCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    @IBAction func buttonPress(_ sender: Any) {
+        print("item checked")
+        let buttonTitle = (gymCheckbox.currentTitle == "✓") ? "O" : "✓"
+        gymCheckbox.setTitle(buttonTitle, for: .normal)
+    }
 }

@@ -248,10 +248,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfz-Pd-5s8">
-                                                    <rect key="frame" x="258" y="5" width="46" height="30"/>
-                                                    <state key="normal" title="Button">
+                                                    <rect key="frame" x="274" y="5" width="30" height="30"/>
+                                                    <state key="normal" title="O">
                                                         <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="buttonPress:" destination="ruJ-Uc-znU" eventType="primaryActionTriggered" id="pIQ-UR-bQh"/>
+                                                    </connections>
                                                 </button>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fcn-gd-noh">
                                                     <rect key="frame" x="8" y="5" width="150" height="30"/>
