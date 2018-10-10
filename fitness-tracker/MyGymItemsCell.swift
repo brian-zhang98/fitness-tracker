@@ -22,5 +22,13 @@ class MyGymItemsCell: UICollectionViewCell {
         print("item checked")
         let buttonTitle = (gymCheckbox.currentTitle == "✓") ? "O" : "✓"
         gymCheckbox.setTitle(buttonTitle, for: .normal)
+        if(gymCheckbox.currentTitle == "✓")
+        {
+            self.backgroundColor = UIColor(hue: 145/360, saturation: 100/100, brightness: 66/100, alpha: 1.0)
+        }
+        else
+        {
+            self.backgroundColor = UIColor.white
+        }
     }
 }
