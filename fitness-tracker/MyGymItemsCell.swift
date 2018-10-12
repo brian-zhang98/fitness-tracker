@@ -10,8 +10,8 @@ import UIKit
 
 class MyGymItemsCell: UICollectionViewCell {
     
-    @IBOutlet weak var gymItem: UITextField!
     @IBOutlet weak var gymCheckbox: UIButton!
+    @IBOutlet weak var gymItemText: UITextField!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +30,8 @@ class MyGymItemsCell: UICollectionViewCell {
         {
             self.backgroundColor = UIColor.white
         }
+    }
+    @IBAction func editEnd(_ sender: Any) {
+        print(gymItemText.text!)
     }
 }

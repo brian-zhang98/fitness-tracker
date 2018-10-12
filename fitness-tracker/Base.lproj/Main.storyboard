@@ -265,6 +265,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                     <connections>
+                                                        <action selector="editEnd:" destination="ruJ-Uc-znU" eventType="editingDidEnd" id="IaB-9t-cjE"/>
                                                         <action selector="poop:" destination="uUM-y9-QQt" eventType="editingDidEnd" id="qtF-qx-jXx"/>
                                                     </connections>
                                                 </textField>
@@ -278,7 +279,7 @@
                                         </constraints>
                                         <connections>
                                             <outlet property="gymCheckbox" destination="bfz-Pd-5s8" id="ku5-ue-FkH"/>
-                                            <outlet property="gymItem" destination="Fcn-gd-noh" id="HTp-Bl-gvA"/>
+                                            <outlet property="gymItemText" destination="Fcn-gd-noh" id="Vb2-IQ-8nr"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
