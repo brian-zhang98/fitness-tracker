@@ -19,7 +19,6 @@ class MyGymItemsCell: UICollectionViewCell {
     }
     
     @IBAction func buttonPress(_ sender: Any) {
-        print("item checked")
         let buttonTitle = (gymCheckbox.currentTitle == "✓") ? "O" : "✓"
         gymCheckbox.setTitle(buttonTitle, for: .normal)
         if(gymCheckbox.currentTitle == "✓")
